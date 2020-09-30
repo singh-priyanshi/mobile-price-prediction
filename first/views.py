@@ -15,6 +15,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from django.template import RequestContext
+import os
 #from django.shortcuts import render_to_response
 
 
@@ -70,8 +71,12 @@ def home(request):
     # # print("image base64" + image_base64)
     # print("home")
     # buf.close()
+    mycwd = os.getcwd()
 
-    df = pd.read_csv('D:\\django_project\\new_data.csv')
+    df = pd.read_csv(os.path.join(os.getcwd() + '\\new_data.csv'))
+    os.chdir(mycwd)
+
+    # df = pd.read_csv('D:\\django_project\\new_data.csv')
     # html_table = df.head().to_html()
     html_table = pp.showhead().to_html()
     print(df.head())
