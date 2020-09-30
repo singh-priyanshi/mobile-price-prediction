@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MOBILE PRICE PREDICTION</title>
+
+    <link rel="icon" type="image/ico" href="data:image/png;base64,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" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<script>
+    $(document).ready(function(){
+      //      alert("Sdsd");
+        $('input').on('keypress', function(e) {
+                return e.which !== 13;
+            });
+
+/*
+        $('#submitForm').click(function(){
+                alert("submitform");
+                var data = $('#form1').serialize();
+            });
+*/
+
+
+    $("#form1").submit(function(e) {
+            alert("submitform");
+
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+
+        var form = $(this);
+        var url = form.attr('action');
+        $.ajax({
+               type: "POST",
+               url: url,
+               data: form.serialize(), // serializes the form's elements.
+               success: function(data1)
+               {
+                    alert(data1);
+                    console.log(data1);
+                    $('#price').html("<h1>PRICE RANGE OF  THE MOBILE FOR GIVEN SPECIFICATION "+data1+"</H1>");
+               }
+
+
+         });
+    });
+
+   });
+</script>
+
+
+<body>
+
+<form  id="form1" action="predictnbc/" method="POST">
+{%csrf_token%}
+                    <div class="form-group">
+                    <label for="BATTERY_POWER">BATTERY POWER</label>
+                    <input type="text" class="form-control" name="BATTERY_POWER" id="BATTERY_POWER" required placeholder="eg. 2500,5100(in mAh)">
+                    </div>
+
+                <div class="form-group">
+                    <label for="BLUETOOTH">BLUETOOTH</label>
+                    <input type="text" class="form-control"  name="BLUETOOTH" id="BLUETOOTH" required placeholder="eg 1 if yes 0 if no" >
+                </div>
+
+                <div class="form-group">
+                    <label for="CLOCK_SPEED">CLOCK SPEED</label>
+                    <input type="text" class="form-control"  name="CLOCK_SPEED" id="CLOCK_SPEED" required placeholder="eg 2.3 2.8 5 (in GHz)">
+                </div>
+
+                <div class="form-group">
+                    <label for="DUAL_SIM">DUAL SIM</label>
+                    <input type="text" class="form-control"  name="DUAL_SIM" id="DUAL_SIM" required placeholder="eg 1 if yes 0 if no">
+                </div>
+
+                <div class="form-group">
+                    <label for="FRONT_CAMERA">FRONT CAMERA</label>
+                    <input type="text" class="form-control" name="FRONT_CAMERA" id="FRONT_CAMERA" required placeholder="eg 5 12 (in mp)">
+                </div>
+
+                <div class="form-group">
+                    <label for="PRIMARY_CAMERA">PRIMARY CAMERA</label>
+                    <input type="text" class="form-control" name="PRIMARY_CAMERA" id="PRIMARY_CAMERA" required placeholder="eg 5 12 (in mp) ">
+                </div>
+
+                <div class="form-group">
+                    <label for="FOUR_G">FOUR G</label>
+                    <input type="text" class="form-control" name="FOUR_G" id="FOUR_G" required placeholder="eg 1 if yes 0 if no">
+                </div>
+
+                <div class="form-group">
+                    <label for="INTERNAL_MEMORY">INTERNAL MEMORY</label>
+                    <input type="text" class="form-control" name="INTERNAL_MEMORY" id="INTERNAL_MEMORY" required placeholder="eg. 16 32 64(in gb)">
+                </div>
+
+                <div class="form-group">
+                    <label for="MOBILE_DEPTH">MOBILE DEPTH</label>
+                    <input type="text" class="form-control" name="MOBILE_DEPTH" id="MOBILE_DEPTH" required placeholder="eg 0.7 0.8 1(in cm)">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="MOBILE_WEIGHT">MOBILE WEIGHT</label>
+                    <input type="text" class="form-control" name="MOBILE_WEIGHT" id="MOBILE_WEIGHT" required placeholder="eg 213,188 (in g)">
+                </div>
+
+                <div class="form-group">
+                    <label for="NUMBER_OF_CORES">NUMBER OF CORES</label>
+                    <input type="text" class="form-control"  name="NUMBER_OF_CORES" id="NUMBER_OF_CORES" required placeholder="eg 3,6">
+                </div>
+                <div class="form-group">
+                    <label for="PIXEL_HEIGHT">PIXEL HEIGHT</label>
+                    <input type="text" class="form-control" name="PIXEL_HEIGHT" id="PIXEL_HEIGHT" required placeholder="eg.1210,800(in px)">
+                </div>
+
+                <div class="form-group">
+                    <label for="PIXEL_WIDTH">PIXEL WIDTH</label>
+                    <input type="text" class="form-control" name="PIXEL_WIDTH" id="PIXEL_WIDTH" required placeholder="eg.1210,750 (in px">
+                </div>
+                <div class="form-group">
+                    <label for="RAM">RAM</label>
+                    <input type="text" class="form-control" name="RAM" id="RAM" required placeholder="eg 3,4,5(in gb)">
+                </div>
+                <div class="form-group">
+                    <label for="SCREEN_HEIGHT">SCREEN HEIGHT</label>
+                    <input type="text" class="form-control" name="SCREEN_HEIGHT" id="SCREEN_HEIGHT" required placeholder="eg. 11 ,6,7 (in cm)">
+                </div>
+                <div class="form-group">
+                    <label for="SCREEN_WIDTH">SCREEN_WIDTH</label>
+                    <input type="text" class="form-control" name="SCREEN_WIDTH" id="SCREEN_WIDTH" required placeholder="eg. 7,4,5 (in cm)">
+                </div>
+
+                <div class="form-group">
+                    <label for="BATTERY_LIFE">BATTERY LIFE</label>
+                    <input type="text" class="form-control" name="BATTERY_LIFE"  id="BATTERY_LIFE" required placeholder="eg. 7,15,12(in hrs)">
+                </div>
+
+                <div class="form-group">
+                    <label for="THREE_G">THREE G</label>
+                    <input type="text" class="form-control" name= "THREE_G" id="THREE_G" required placeholder="eg 1 if yes 0 if no">
+                </div>
+
+              <div class="form-group">
+                    <label for="TOUCH_SCREEN">TOUCH SCREEN</label>
+                    <input type="text" class="form-control" name= "TOUCH_SCREEN" id="TOUCH_SCREEN" required placeholder="eg 1 if yes 0 if no">
+              </div>
+                <div class="form-group">
+                    <label for="WIFI">WIFI</label>
+                    <input type="text" class="form-control" name="WIFI" id="WIFI" required placeholder="eg 1 if yes 0 if no">
+                </div>
+
+
+
+                    <button type="submit" id="submitForm" class="btn btn-primary">Submit</button>
+                     <button type="reset" id="resetForm" class="btn btn-primary">RESET</button>
+              </form>
+
+<h1 id="price"></h1>
+</body>
+</html>
