@@ -95,7 +95,7 @@ def showhead():
     # os.chdir("..")
     # os.chdir("..")
 
-    dataset = pd.read_csv(os.path.join(os.path.dirname(__file__) + '\\new_data.csv'))
+    dataset = pd.read_csv(os.path.join(os.getcwd() + '/new_data.csv'))
     os.chdir(mycwd)
     return dataset.head()
 
@@ -106,7 +106,7 @@ class LR:
         # os.chdir("..")
         # os.chdir("..")
 
-        dataset = pd.read_csv(os.path.join(os.path.dirname(__file__) + '\\new_data.csv'))
+        dataset = pd.read_csv(os.path.join(os.getcwd() + '/new_data.csv'))
         os.chdir(mycwd)
         X = dataset.drop('price_range', axis=1)
         y = dataset['price_range']
@@ -134,7 +134,7 @@ class NBC :
         # os.chdir("..")
         # os.chdir("..")
 
-        dataset = pd.read_csv(os.path.join(os.path.dirname(__file__) + '\\new_data.csv'))
+        dataset = pd.read_csv(os.path.join(os.getcwd() + '/new_data.csv'))
         os.chdir(mycwd)
 
         X = dataset.drop('price_range', axis=1)
@@ -163,7 +163,7 @@ class KNN:
         # os.chdir("..")
         # os.chdir("..")
 
-        dataset = pd.read_csv(os.path.join(os.path.dirname(__file__) + '\\new_data.csv'))
+        dataset = pd.read_csv(os.path.join(os.getcwd() + '/new_data.csv'))
         os.chdir(mycwd)
 
         self.X = dataset.drop('price_range', axis=1)
