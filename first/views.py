@@ -73,7 +73,7 @@ def home(request):
     # buf.close()
     mycwd = os.getcwd()
 
-    df = pd.read_csv(os.path.join(os.getcwd() + '\\new_data.csv'))
+    df = pd.read_csv(os.path.join(os.getcwd() + '/new_data.csv'))
     os.chdir(mycwd)
 
     # df = pd.read_csv('D:\\django_project\\new_data.csv')
