@@ -61,12 +61,20 @@ class Specs:
         self.price_range= price_range
 
 def showhead():
-    dataset = pd.read_csv('D:\\django_project\\new_data.csv')
-    return dataset.head()
+        mycwd = os.getcwd()
+        os.chdir("..")
+        os.chdir("..")
+        dataset = pd.read_csv(os.path.join(os.getcwd() + 'new_data.csv'))
+        os.chdir(mycwd)
+        return dataset.head()
 
 class LR:
     def __init__(self):
-        dataset = pd.read_csv('D:\\django_project\\new_data.csv')
+        mycwd = os.getcwd()
+        os.chdir("..")
+        os.chdir("..")
+        dataset = pd.read_csv(os.path.join(os.getcwd() + 'new_data.csv'))
+        os.chdir(mycwd)
         X = dataset.drop('price_range', axis=1)
         y = dataset['price_range']
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=101)
@@ -88,7 +96,11 @@ class LR:
 class KNN:
     def __init__(self):
         from sklearn.neighbors import KNeighborsClassifier
-        dataset = pd.read_csv('D:\\django_project\\new_data.csv')
+        mycwd = os.getcwd()
+        os.chdir("..")
+        os.chdir("..")
+        dataset = pd.read_csv(os.path.join(os.getcwd() + 'new_data.csv'))
+        os.chdir(mycwd)
         self.X = dataset.drop('price_range', axis=1)
         self.y = dataset['price_range']
         self.X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=101)
